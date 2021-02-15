@@ -80,7 +80,6 @@
     -webkit-transition: -webkit-transform 0.35s;
     transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
-    transition: transform 0.35s, -webkit-transform 0.35s;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
   }
@@ -94,59 +93,6 @@
   }
   input.hamburger {
     display: none;
-  }
-  input.hamburger:checked ~ nav.primnav {
-    height: 100vh;
-  }
-  @media (min-width: 650px) {
-    input.hamburger:checked ~ nav.primnav {
-      width: 275px;
-    }
-  }
-  @media (min-width: 650px) {
-    input.hamburger:checked ~ nav.primnav .secnav > li {
-      max-height: 100px;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(1) {
-      -webkit-transition: max-height 0.5s 0.67s ease-in;
-      transition: max-height 0.5s 0.67s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(2) {
-      -webkit-transition: max-height 0.5s 0.69s ease-in;
-      transition: max-height 0.5s 0.69s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(3) {
-      -webkit-transition: max-height 0.5s 0.71s ease-in;
-      transition: max-height 0.5s 0.71s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(4) {
-      -webkit-transition: max-height 0.5s 0.73s ease-in;
-      transition: max-height 0.5s 0.73s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(5) {
-      -webkit-transition: max-height 0.5s 0.75s ease-in;
-      transition: max-height 0.5s 0.75s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(6) {
-      -webkit-transition: max-height 0.5s 0.77s ease-in;
-      transition: max-height 0.5s 0.77s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(7) {
-      -webkit-transition: max-height 0.5s 0.79s ease-in;
-      transition: max-height 0.5s 0.79s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(8) {
-      -webkit-transition: max-height 0.5s 0.81s ease-in;
-      transition: max-height 0.5s 0.81s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(9) {
-      -webkit-transition: max-height 0.5s 0.83s ease-in;
-      transition: max-height 0.5s 0.83s ease-in;
-    }
-    input.hamburger:checked ~ nav.primnav .secnav > li:nth-child(10) {
-      -webkit-transition: max-height 0.5s 0.85s ease-in;
-      transition: max-height 0.5s 0.85s ease-in;
-    }
   }
   input.hamburger:checked ~ label > i {
     background-color: transparent;
@@ -162,7 +108,7 @@
     transform: translate(-50%, -50%) rotate(-45deg);
   }
   input.hamburger:checked ~ label close {
-    color: rgba(255, 255, 255, 0.8);
+    color: green;
     width: 100%;
   }
   input.hamburger:checked ~ label open {
@@ -194,12 +140,12 @@
     font-size: 6px;
   }
   label.hamburger text close {
-    color: rgba(255, 255, 255, 0.8);
+    color: green;
     right: 0;
     width: 0;
   }
   label.hamburger text open {
-    color: rgba(255, 255, 255, 0.8);
+    color: green;
     width: 100%;
   }
   label.hamburger > i {
@@ -207,7 +153,7 @@
     width: 100%;
     height: 2px;
     top: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: green;
     pointer-events: auto;
     -webkit-transition-duration: .35s;
     transition-duration: .35s;
@@ -220,21 +166,19 @@
     width: 100%;
     height: 2px;
     left: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: green;
     content: "";
     -webkit-transition: -webkit-transform 0.35s;
     transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    transition: transform 0.35s, -webkit-transform 0.35s;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
   }
   label.hamburger > i:before {
-    -webkit-transform: translate(-50%, -7px);
+    -webkit-transform: translate(-50%, 7px);
     transform: translate(-50%, -7px);
   }
   label.hamburger > i:after {
-    -webkit-transform: translate(-50%, 7px);
+    -webkit-transform: translate(-50%, -7px);
     transform: translate(-50%, 7px);
   }
 
@@ -276,12 +220,12 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
+                  <!--
+                                    <div class="form-group col-md-12">
 
-                  <div class="form-group col-md-12">
-
-                   <!-- <a id="pin-sidebar" class="btn btn-outline-secondary rounded-0" href="#">
-                      <span>Pin Sidebar</span>
-                    </a>-->
+                                      <a id="pin-sidebar" class="btn btn-outline-secondary rounded-0" href="#">
+                                        <span>Pin Sidebar</span>
+                                      </a>
                     <input id="pin-sidebar" class="hamburger" type="checkbox" />
                     <label for="pin-sidebar" class="hamburger">
                       <i></i>
@@ -291,7 +235,7 @@
                       </text>
                     </label>
 
-                  </div>
+                  </div>-->
                 </div>
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
@@ -616,6 +560,26 @@
 
                     </div>
 
+                  <div class="form-group col-md-12">
+                    <input id="toggle-sidebar" class="hamburger" type="checkbox" />
+                    <label for="toggle-sidebar" class="hamburger">
+                      <i></i>
+                      <text>
+                        <open>Închide</open>
+                        <close>Meniu</close>
+
+
+                      </text>
+                    </label>
+                    <!--<a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#">
+                      <span>Toggle Sidebar</span>
+                    </a>-->
+                    <a id="pin-sidebar" class="btn btn-outline-secondary rounded-0" href="#">
+                      <span>Pin Sidebar</span>
+                    </a>
+
+                  </div>
+                </div>
 
                 </div>
                 <hr>
@@ -682,10 +646,10 @@
                         </a>
                     </div>
                 </div>
+          </main>
             </div>
-        </main>
+
         <!-- page-content" -->
-    </div>
     <!-- page-wrapper -->
 
     <!-- using online scripts -->
