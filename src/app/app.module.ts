@@ -9,18 +9,22 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { ClientRegistrationComponent } from './portal/pages/client-registration/client-registration.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ClientRegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
