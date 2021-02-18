@@ -1,10 +1,33 @@
+
 ng-sidebar-container{
   height: 100vh;
 }
-
 ::ng-deep .ng-sidebar {
   background-color: lightgray;
   width: 300px;
   padding: 2em 3em;
   box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5);
 }
+.menu {
+  margin-top: 2em;
+  display: block;
+}
+.menu li {
+  margin-bottom: 15px;
+
+}
+.menu li a {
+  display: block;
+  width: 100%;
+}
+label.butonel {
+  position: fixed;
+  top: 15px;
+  left: 220px;
+}
+label.butonel1 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+

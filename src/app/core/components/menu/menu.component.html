@@ -1,17 +1,25 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 <ng-sidebar-container>
   <ng-sidebar [opened]="opened">
     <p>Sidebar Contents</p>
-    <button (click)="toggleSidebar()">
-      Close Sidebar
-    </button>
+    <label class="butonel">
+      <button (click)="toggleSidebar()" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-times"></i></button>
+    </label>
     <ul class="menu">
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/register-client">Înregistrare</a></li>
+      <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
+      <li><a routerLink="/register-client" (click)="toggleSidebar()">Înregistrare</a></li>
     </ul>
   </ng-sidebar>
   <div ng-sidebar-content>
-    <button (click)="toggleSidebar()">
-      Open Sidebar
-    </button>
+    <label class="butonel1">
+      <button (click)="toggleSidebar()" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars"></i></button>
+    </label>
+    <router-outlet></router-outlet>
   </div>
 </ng-sidebar-container>
+
+
