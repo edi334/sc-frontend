@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { ClientRegistrationComponent } from './portal/pages/client-registration/client-registration.component';
 import {FormsModule} from '@angular/forms';
+import {SidebarModule} from 'ng-sidebar';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FormsModule} from '@angular/forms';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    SidebarModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

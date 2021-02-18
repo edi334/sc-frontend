@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SidebarModule} from 'ng-sidebar';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  opened = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleSidebar() {
+    this.opened = !this.opened;
   }
 
 }

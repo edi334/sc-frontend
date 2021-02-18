@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<ng-sidebar-container>
+  <ng-sidebar [opened]="opened">
+    <p>Sidebar Contents</p>
+    <button (click)="toggleSidebar()">
+      Close Sidebar
+    </button>
+    <ul class="menu">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/register-client">Înregistrare</a></li>
+    </ul>
+  </ng-sidebar>
+  <div ng-sidebar-content>
+    <button (click)="toggleSidebar()">
+      Open Sidebar
+    </button>
+  </div>
+</ng-sidebar-container>
