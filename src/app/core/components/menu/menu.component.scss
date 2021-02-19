@@ -6,20 +6,24 @@ ng-sidebar-container{
   background-color: lightgray;
   width: 300px;
   padding: 2em 3em;
-
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 60%;
 }
+
 .menu {
   margin-top: 2em;
   display: block;
+  list-style: none;
 }
 .menu li {
   margin-bottom: 15px;
+}
 
-}
-.menu li a {
-  display: block;
-  width: 100%;
-}
 label.butonel {
   position: fixed;
   top: 15px;
