@@ -73,14 +73,12 @@ h2 {
 }
 .form-style-5 {
   position: fixed;
+  left:525px;
   max-width: 410px;
   background-color: rgba(0, 0, 0, 0.8);
   margin: 10px auto;
   padding: 20px;
   border-radius: 8px;
-}
-::-webkit-scrollbar {
-  overflow: hidden;
 }
 hr {
   background: url('http://i.stack.imgur.com/37Aip.png%27') no-repeat top center;
@@ -109,7 +107,11 @@ hr {
   left: 50%;
   margin-left: 10px;
   }
-video{
-  position:absolute;
-  width:100%;
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
+
