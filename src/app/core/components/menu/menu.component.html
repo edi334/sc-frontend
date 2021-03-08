@@ -3,10 +3,26 @@
     <label class="butonel">
       <button (click)="toggleSidebar()" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-times"></i></button>
     </label>
+
+    <div class="meniu-antet">
+      <img  class="portrait" src="/assets/images/user-male.png" alt="user-male">
+      <p>Username</p>
+      <p>Ofline/Online</p>
+    </div>
+    <hr>
     <ul class="menu">
       <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
       <li><a routerLink="/register-client" (click)="toggleSidebar()">Register</a></li>
+      <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
+      <li><a routerLink="/register-client" (click)="toggleSidebar()">Register</a></li>
+      <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
+      <li><a routerLink="/register-client" (click)="toggleSidebar()">Register</a></li>
     </ul>
+    <hr>
+    <div class="meniu-subsol">
+      <p>Chestii</p>
+      <p>Chestii</p>
+    </div>
   </ng-sidebar>
   <div ng-sidebar-content>
     <label class="butonel1">
