@@ -5,10 +5,34 @@
     </label>
 
     <div class="meniu-antet">
-      <img  class="portrait" src="/assets/images/user-male.png" alt="user-male">
-      <p>Username</p>
-      <p>Ofline/Online</p>
+      <div class="user-pic">
+        <img class="img-responsive img-rounded" src="/assets/images/user-male.png" alt="User picture">
+      </div>
+      <br>
+      <div class="user-info">
+                        <span class="user-name">Jhon
+                            <strong>Smith</strong>
+                        </span>
+        <span class="user-role">Administrator</span>
+        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+      </div>
+      <div class="sidebar-item sidebar-search">
+        <div>
+          <div class="input-group">
+            <input type="text" class="form-control search-menu" placeholder="Search...">
+            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="main-menu">
     <hr>
     <ul class="menu">
       <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
@@ -18,10 +42,24 @@
       <li><a routerLink="/" (click)="toggleSidebar()">Home</a></li>
       <li><a routerLink="/register-client" (click)="toggleSidebar()">Register</a></li>
     </ul>
-    <hr>
+      <hr>
+    </div>
     <div class="meniu-subsol">
-      <p>Chestii</p>
-      <p>Chestii</p>
+      <a href="#">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-cog"></i>
+        <span class="badge-sonar"></span>
+      </a>
+      <a href="#">
+        <i class="fa fa-power-off"></i>
+      </a>
     </div>
   </ng-sidebar>
   <div ng-sidebar-content>
